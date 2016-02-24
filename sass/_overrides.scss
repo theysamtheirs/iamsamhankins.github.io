@@ -19,6 +19,7 @@ nav {
 .case-studies {
     .case-list {
         display: inline-block;
+        vertical-align:top;
         width: 100%;
         height: 200px;
         margin-bottom: 10px;
@@ -43,10 +44,29 @@ footer {
 }
 
 .with-border{
+        box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     text-align: center;
     border: 1px solid black;
     padding: 10px 20px 10px 20px;
-    &:hover {
-        background-color: $main-color;
+}
+
+#landing-changeseed {
+    background-image: url("/images/Landing-Page.jpg");
+}
+
+#landing-driftlist {
+    background-image:url("/images/driftlist-welcome.jpg");
+}
+
+#landing-blocbox {
+    background-image: url("/images/blocbox.jpg");
+}
+
+.social-bar {
+    li {
+        display: inline;
+        padding: 10px;
     }
 }

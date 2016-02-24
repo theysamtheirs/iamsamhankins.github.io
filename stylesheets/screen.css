@@ -73,13 +73,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 6, ../sass/_typography.scss */
 body {
-  font-family: sans-serif;
-  font-size: 12px;
+  font-family: Georgia;
+  font-size: 16px;
 }
 @media screen and (min-width: 480px) {
   /* line 6, ../sass/_typography.scss */
   body {
-    font-size: 16px;
+    font-size: 22px;
   }
 }
 
@@ -90,29 +90,41 @@ a {
 
 /* line 16, ../sass/_typography.scss */
 h1 {
-  font-size: 2em;
+  font-size: 3em;
   color: #F16868;
   font-family: Visby;
 }
 
 /* line 21, ../sass/_typography.scss */
 h2 {
-  font-size: 1.75em;
+  font-size: 2em;
 }
 
 /* line 24, ../sass/_typography.scss */
 h3 {
+  font-size: 1.75em;
+  text-align: center;
+}
+
+/* line 28, ../sass/_typography.scss */
+h4 {
   font-size: 1.5em;
 }
 
-/* line 27, ../sass/_typography.scss */
-h4 {
-  font-size: 1.25em;
-}
-
-/* line 30, ../sass/_typography.scss */
+/* line 31, ../sass/_typography.scss */
 #antha {
   color: #fac5c5;
+}
+
+/* line 35, ../sass/_typography.scss */
+.section-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 40, ../sass/_typography.scss */
+i {
+  font-size: 28px;
 }
 
 /* line 1, ../sass/_overrides.scss */
@@ -140,13 +152,14 @@ nav li {
 /* line 20, ../sass/_overrides.scss */
 .case-studies .case-list {
   display: inline-block;
+  vertical-align: top;
   width: 100%;
   height: 200px;
   margin-bottom: 10px;
   background-color: gray;
   text-align: center;
 }
-/* line 27, ../sass/_overrides.scss */
+/* line 28, ../sass/_overrides.scss */
 .case-studies .case-list h4 {
   margin-top: 75px;
 }
@@ -157,24 +170,44 @@ nav li {
   }
 }
 
-/* line 36, ../sass/_overrides.scss */
+/* line 37, ../sass/_overrides.scss */
 .contact {
   text-align: center;
 }
 
-/* line 40, ../sass/_overrides.scss */
+/* line 41, ../sass/_overrides.scss */
 footer {
   border-top: 1px solid black;
   height: 40px;
 }
 
-/* line 45, ../sass/_overrides.scss */
+/* line 46, ../sass/_overrides.scss */
 .with-border {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   text-align: center;
   border: 1px solid black;
   padding: 10px 20px 10px 20px;
 }
-/* line 49, ../sass/_overrides.scss */
-.with-border:hover {
-  background-color: #F16868;
+
+/* line 55, ../sass/_overrides.scss */
+#landing-changeseed {
+  background-image: url("/images/Landing-Page.jpg");
+}
+
+/* line 59, ../sass/_overrides.scss */
+#landing-driftlist {
+  background-image: url("/images/driftlist-welcome.jpg");
+}
+
+/* line 63, ../sass/_overrides.scss */
+#landing-blocbox {
+  background-image: url("/images/blocbox.jpg");
+}
+
+/* line 68, ../sass/_overrides.scss */
+.social-bar li {
+  display: inline;
+  padding: 10px;
 }
