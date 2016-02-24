@@ -112,15 +112,15 @@ h4 {
 
 /* line 30, ../sass/_typography.scss */
 #antha {
-  color: purple;
+  color: #fac5c5;
 }
 
 /* line 1, ../sass/_overrides.scss */
 nav {
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: aqua;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: ghostwhite;
 }
 /* line 6, ../sass/_overrides.scss */
 nav li {
@@ -166,4 +166,15 @@ nav li {
 footer {
   border-top: 1px solid black;
   height: 40px;
+}
+
+/* line 45, ../sass/_overrides.scss */
+.with-border {
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px 20px 10px 20px;
+}
+/* line 49, ../sass/_overrides.scss */
+.with-border:hover {
+  background-color: #F16868;
 }
