@@ -73,7 +73,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 6, ../sass/_typography.scss */
 body {
-  font-family: Georgia;
+  font-family: ff-more-web-pro;
   font-size: 16px;
 }
 @media screen and (min-width: 480px) {
@@ -86,45 +86,44 @@ body {
 /* line 13, ../sass/_typography.scss */
 a {
   text-decoration: none;
+  color: black;
+}
+/* line 16, ../sass/_typography.scss */
+a:hover {
+  color: #F16868;
 }
 
-/* line 16, ../sass/_typography.scss */
+/* line 20, ../sass/_typography.scss */
 h1 {
   font-size: 3em;
   color: #F16868;
   font-family: Visby;
 }
 
-/* line 21, ../sass/_typography.scss */
+/* line 25, ../sass/_typography.scss */
 h2 {
   font-size: 2em;
 }
 
-/* line 24, ../sass/_typography.scss */
+/* line 28, ../sass/_typography.scss */
 h3 {
   font-size: 1.75em;
   text-align: center;
 }
 
-/* line 28, ../sass/_typography.scss */
+/* line 32, ../sass/_typography.scss */
 h4 {
   font-size: 1.5em;
 }
 
-/* line 31, ../sass/_typography.scss */
-#antha {
-  color: #fac5c5;
-}
-
 /* line 35, ../sass/_typography.scss */
-.section-header {
-  padding-top: 20px;
-  padding-bottom: 20px;
+#antha {
+  color: #f7aeae;
 }
 
-/* line 40, ../sass/_typography.scss */
-i {
-  font-size: 28px;
+/* line 39, ../sass/_typography.scss */
+.section-header {
+  padding-bottom: 40px;
 }
 
 /* line 1, ../sass/_overrides.scss */
@@ -132,7 +131,7 @@ nav {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: ghostwhite;
+  background-color: #e6e6e6;
 }
 /* line 6, ../sass/_overrides.scss */
 nav li {
@@ -142,15 +141,20 @@ nav li {
 
 /* line 12, ../sass/_overrides.scss */
 .hero {
-  height: 300px;
   padding-left: 30px;
   padding-right: 30px;
-  background-color: cadetblue;
+  background-color: lightgray;
   padding-top: 100px;
+  padding-bottom: 30px;
 }
 
 /* line 20, ../sass/_overrides.scss */
-.case-studies .case-list {
+.case-studies, .contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* line 21, ../sass/_overrides.scss */
+.case-studies .case-list, .contact .case-list {
   display: inline-block;
   vertical-align: top;
   width: 100%;
@@ -159,29 +163,30 @@ nav li {
   background-color: gray;
   text-align: center;
 }
-/* line 28, ../sass/_overrides.scss */
-.case-studies .case-list h4 {
+/* line 29, ../sass/_overrides.scss */
+.case-studies .case-list h4, .contact .case-list h4 {
   margin-top: 75px;
 }
 @media screen and (min-width: 480px) {
-  /* line 20, ../sass/_overrides.scss */
-  .case-studies .case-list {
+  /* line 21, ../sass/_overrides.scss */
+  .case-studies .case-list, .contact .case-list {
     width: 33%;
   }
 }
 
-/* line 37, ../sass/_overrides.scss */
+/* line 40, ../sass/_overrides.scss */
 .contact {
   text-align: center;
+  background-color: #ededed;
 }
 
-/* line 41, ../sass/_overrides.scss */
+/* line 45, ../sass/_overrides.scss */
 footer {
   border-top: 1px solid black;
   height: 40px;
 }
 
-/* line 46, ../sass/_overrides.scss */
+/* line 50, ../sass/_overrides.scss */
 .with-border {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -191,23 +196,48 @@ footer {
   padding: 10px 20px 10px 20px;
 }
 
-/* line 55, ../sass/_overrides.scss */
+/* line 59, ../sass/_overrides.scss */
 #landing-changeseed {
   background-image: url("/images/Landing-Page.jpg");
 }
 
-/* line 59, ../sass/_overrides.scss */
+/* line 63, ../sass/_overrides.scss */
 #landing-driftlist {
   background-image: url("/images/driftlist-welcome.jpg");
 }
 
-/* line 63, ../sass/_overrides.scss */
+/* line 67, ../sass/_overrides.scss */
 #landing-blocbox {
   background-image: url("/images/blocbox.jpg");
 }
 
-/* line 68, ../sass/_overrides.scss */
+/* line 71, ../sass/_overrides.scss */
+.social-bar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 74, ../sass/_overrides.scss */
+.social-bar h4 {
+  padding-bottom: 10px;
+}
+/* line 77, ../sass/_overrides.scss */
 .social-bar li {
   display: inline;
   padding: 10px;
+}
+
+/* line 82, ../sass/_overrides.scss */
+.copyright-info {
+  float: right;
+}
+
+/* line 86, ../sass/_overrides.scss */
+.button {
+  padding: 20px;
+  margin-top: 50px;
+  background-color: #ffb733;
+}
+/* line 90, ../sass/_overrides.scss */
+.button:hover {
+  color: white;
 }

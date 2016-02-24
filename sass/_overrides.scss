@@ -2,7 +2,7 @@ nav {
     text-align: center;
     padding-top:20px;
     padding-bottom:20px;
-    background-color: ghostwhite;
+    background-color: lighten(grey, 40%);
     li {
         display: inline;
         padding-right: 20px;
@@ -10,13 +10,14 @@ nav {
 }
 
 .hero {
-    height: 300px;
+//    height: 300px;
     padding-left: 30px;
     padding-right: 30px;
-    background-color: cadetblue;
+    background-color: lightgray;
     padding-top: 100px;
+    padding-bottom: 30px;
 }
-.case-studies {
+.case-studies, .contact {
     .case-list {
         display: inline-block;
         vertical-align:top;
@@ -32,10 +33,13 @@ nav {
             width: 33%;
         }
     }
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .contact {
     text-align: center;
+    background-color: lighten(lightgray, 10%);
 }
 
 footer {
@@ -65,8 +69,25 @@ footer {
 }
 
 .social-bar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    h4 {
+        padding-bottom: 10px;
+    }
     li {
         display: inline;
         padding: 10px;
+    }
+}
+.copyright-info{
+    float: right;
+}
+
+.button {
+    padding: 20px;
+    margin-top: 50px;
+    background-color: lighten(orange, 10%);
+    &:hover {
+        color: white;
     }
 }
