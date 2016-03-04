@@ -50,6 +50,20 @@ nav {
         @media screen and (min-width: 480px) {
             width: 33%;
         }
+        &#landing-changeseed {
+            img {
+                width: 125%;
+            }
+            h4 {
+                font-size: 1.75em;
+                margin-bottom: 43px;
+            }
+        }
+        &#landing-blocbox {
+            img {
+                width: 125%;
+            }
+        }
     }
     padding-top: 50px;
     padding-bottom: 50px;
@@ -75,7 +89,7 @@ footer {
 }
 
 #landing-changeseed {
-    background-image: url("/images/changeseed-landing-image.gif");
+    background-image: url("/images/changeseed-landing-image.png");
     background-size: cover;
     h5 {
         margin-top: 135px;
@@ -90,7 +104,7 @@ footer {
 }
 
 #landing-blocbox {
-    background-image: url("/images/blocbox.gif");
+    background-image: url("/images/blocbox-landing-image.png");
     background-position: top center; 
     background-size: cover;
     h5 {

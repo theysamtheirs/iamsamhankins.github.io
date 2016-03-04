@@ -79,7 +79,7 @@ p{
 }
 
 .landing-case-logo {
-    width: 20%;
+    width: 25%;
     margin: auto;
 }
 
@@ -88,14 +88,38 @@ p{
     margin-bottom: 20px;
 }
 
-.brand-name #drift-list{
+.brand-name#drift-list{
     font-family: "clarendon-urw";
     font-weight: 300;
-    letter-spacing: 10px;
+    letter-spacing: 15px;
     color: white;
+    padding-top: 10px;
+    border-top: 1px solid white;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    &:hover {
+        color: $main-color;
+    }
 }
 
 
-#driftlist-drift{
+#driftlist-bold{
     font-weight: 500;
+}
+
+#changeseed{
+    font-family: "abril-text";
+    color: white;
+}
+
+#blocbox{
+    font-family: "league-gothic";
+    color: white;
+    font-size: 2.5em;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
