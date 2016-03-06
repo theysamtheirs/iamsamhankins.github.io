@@ -71,122 +71,96 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: Visby;
   src: url(../fonts/VisbyCF-Heavy.woff);
 }
-/* line 6, ../sass/_typography.scss */
+/* line 8, ../sass/_typography.scss */
+.wf-loading {
+  visibility: hidden;
+}
+
+/* line 12, ../sass/_typography.scss */
+.wf-active, .wf-inactive {
+  visibility: visible;
+}
+
+/* line 16, ../sass/_typography.scss */
 body {
   font-family: ff-more-web-pro;
   font-size: 16px;
 }
 @media screen and (min-width: 480px) {
-  /* line 6, ../sass/_typography.scss */
+  /* line 16, ../sass/_typography.scss */
   body {
     font-size: 20px;
   }
 }
 
-/* line 13, ../sass/_typography.scss */
+/* line 23, ../sass/_typography.scss */
 a {
   text-decoration: none;
   color: black;
 }
-/* line 16, ../sass/_typography.scss */
+/* line 26, ../sass/_typography.scss */
 a:hover {
   color: #F16868;
 }
 
-/* line 20, ../sass/_typography.scss */
+/* line 30, ../sass/_typography.scss */
 h1 {
   font-size: 3em;
   color: #F16868;
   font-family: Visby;
 }
 
-/* line 25, ../sass/_typography.scss */
+/* line 35, ../sass/_typography.scss */
 h2 {
   font-size: 2em;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* line 30, ../sass/_typography.scss */
+/* line 40, ../sass/_typography.scss */
 h3 {
   font-size: 1.75em;
   text-align: center;
 }
 
-/* line 34, ../sass/_typography.scss */
+/* line 44, ../sass/_typography.scss */
 h4 {
   font-size: 1.5em;
 }
 
-/* line 38, ../sass/_typography.scss */
+/* line 48, ../sass/_typography.scss */
 p {
-  line-height: 1.6;
+  line-height: 1.8;
 }
-@media screen and (min-width: 480px) {
-  /* line 38, ../sass/_typography.scss */
-  p {
-    width: 60%;
-  }
-}
-/* line 43, ../sass/_typography.scss */
+/* line 53, ../sass/_typography.scss */
 .contact p {
   text-align: center;
   width: 100%;
 }
 
-/* line 48, ../sass/_typography.scss */
-#antha {
-  color: #f7aeae;
-}
-
-/* line 52, ../sass/_typography.scss */
+/* line 59, ../sass/_typography.scss */
 .section-header {
   padding-bottom: 40px;
 }
 
-/* line 56, ../sass/_typography.scss */
-.bio-body {
-  width: 85%;
-  margin: 0 auto;
-}
-/* line 57, ../sass/_typography.scss */
-.bio-body h3 {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: left;
-  font-size: 1.25em;
-  text-transform: uppercase;
-  font-family: Visby;
-}
-@media screen and (min-width: 480px) {
-  /* line 56, ../sass/_typography.scss */
-  .bio-body {
-    width: 60%;
-  }
-}
-/* line 71, ../sass/_typography.scss */
-.bio-body .intro-bio p {
-  font-size: 1.25em;
+/* line 65, ../sass/_typography.scss */
+#antha {
+  color: #f7aeae;
 }
 
-/* line 77, ../sass/_typography.scss */
-.lead-text {
-  font-weight: bold;
-}
-
-/* line 81, ../sass/_typography.scss */
+/* line 69, ../sass/_typography.scss */
 .landing-case-logo {
   width: 25%;
   margin: auto;
 }
 
-/* line 86, ../sass/_typography.scss */
+/* line 74, ../sass/_typography.scss */
 .brand-name {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* line 91, ../sass/_typography.scss */
+/* line 79, ../sass/_typography.scss */
 .brand-name#drift-list {
   font-family: "clarendon-urw";
   font-weight: 300;
@@ -201,29 +175,64 @@ p {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 104, ../sass/_typography.scss */
+/* line 92, ../sass/_typography.scss */
 .brand-name#drift-list:hover {
   color: #F16868;
 }
 
-/* line 110, ../sass/_typography.scss */
+/* line 97, ../sass/_typography.scss */
 #driftlist-bold {
   font-weight: 500;
 }
 
-/* line 114, ../sass/_typography.scss */
+/* line 101, ../sass/_typography.scss */
 #changeseed {
   font-family: "abril-text";
   color: white;
 }
 
-/* line 119, ../sass/_typography.scss */
+/* line 106, ../sass/_typography.scss */
 #blocbox {
   font-family: "league-gothic";
   color: white;
   font-size: 2.5em;
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+}
+
+/* line 116, ../sass/_typography.scss */
+.bio-body {
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 117, ../sass/_typography.scss */
+.bio-body h3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: left;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  font-family: Visby;
+}
+@media screen and (min-width: 480px) {
+  /* line 116, ../sass/_typography.scss */
+  .bio-body {
+    width: 65%;
+  }
+}
+/* line 131, ../sass/_typography.scss */
+.bio-body .intro-bio p {
+  font-size: 1.25em;
+}
+
+/* line 137, ../sass/_typography.scss */
+.lead-text {
+  font-weight: bold;
+}
+
+/* line 144, ../sass/_typography.scss */
+#contact-hero h1 {
+  margin-bottom: 20px;
 }
 
 /* line 1, ../sass/_overrides.scss */
@@ -268,12 +277,24 @@ nav li {
   padding-bottom: 20px;
 }
 
-/* line 37, ../sass/_overrides.scss */
+@media screen and (min-width: 480px) {
+  /* line 38, ../sass/_overrides.scss */
+  .hero-copy {
+    width: 65%;
+    margin: 0 auto;
+  }
+}
+/* line 43, ../sass/_overrides.scss */
+.hero-copy h2 {
+  line-height: 1.5;
+}
+
+/* line 48, ../sass/_overrides.scss */
 .case-studies, .contact {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 38, ../sass/_overrides.scss */
+/* line 49, ../sass/_overrides.scss */
 .case-studies .case-list, .contact .case-list {
   display: inline-block;
   vertical-align: top;
@@ -282,44 +303,46 @@ nav li {
   background-color: gray;
   text-align: center;
 }
-/* line 46, ../sass/_overrides.scss */
+/* line 57, ../sass/_overrides.scss */
 .case-studies .case-list h5, .contact .case-list h5 {
   margin-top: 155px;
   color: white;
 }
 @media screen and (min-width: 480px) {
-  /* line 38, ../sass/_overrides.scss */
+  /* line 49, ../sass/_overrides.scss */
   .case-studies .case-list, .contact .case-list {
     width: 33%;
   }
 }
-/* line 54, ../sass/_overrides.scss */
+/* line 65, ../sass/_overrides.scss */
 .case-studies .case-list#landing-changeseed img, .contact .case-list#landing-changeseed img {
   width: 125%;
+  margin-bottom: 10px;
 }
-/* line 57, ../sass/_overrides.scss */
+/* line 69, ../sass/_overrides.scss */
 .case-studies .case-list#landing-changeseed h4, .contact .case-list#landing-changeseed h4 {
   font-size: 1.75em;
-  margin-bottom: 43px;
+  margin-bottom: 33px;
 }
-/* line 63, ../sass/_overrides.scss */
+/* line 75, ../sass/_overrides.scss */
 .case-studies .case-list#landing-blocbox img, .contact .case-list#landing-blocbox img {
   width: 125%;
+  margin-left: -30px;
 }
 
-/* line 72, ../sass/_overrides.scss */
+/* line 85, ../sass/_overrides.scss */
 .contact {
   background-color: #ededed;
   text-align: center;
 }
 
-/* line 77, ../sass/_overrides.scss */
+/* line 90, ../sass/_overrides.scss */
 footer {
   border-top: 1px solid black;
   height: 40px;
 }
 
-/* line 82, ../sass/_overrides.scss */
+/* line 95, ../sass/_overrides.scss */
 .with-border {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -329,17 +352,17 @@ footer {
   padding: 10px 20px 10px 20px;
 }
 
-/* line 91, ../sass/_overrides.scss */
+/* line 104, ../sass/_overrides.scss */
 #landing-changeseed {
   background-image: url("/images/changeseed-landing-image.png");
   background-size: cover;
 }
-/* line 94, ../sass/_overrides.scss */
+/* line 107, ../sass/_overrides.scss */
 #landing-changeseed h5 {
   margin-top: 135px;
 }
 
-/* line 99, ../sass/_overrides.scss */
+/* line 112, ../sass/_overrides.scss */
 #landing-driftlist {
   background-image: url("/images/drift-landing-bg.png");
   background-position: top center;
@@ -347,62 +370,62 @@ footer {
   background-size: cover;
 }
 
-/* line 106, ../sass/_overrides.scss */
+/* line 119, ../sass/_overrides.scss */
 #landing-blocbox {
   background-image: url("/images/blocbox-landing-image.png");
   background-position: top center;
   background-size: cover;
 }
-/* line 110, ../sass/_overrides.scss */
+/* line 123, ../sass/_overrides.scss */
 #landing-blocbox h5 {
   margin-top: 135px;
 }
 
-/* line 116, ../sass/_overrides.scss */
+/* line 129, ../sass/_overrides.scss */
 .social-bar {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 119, ../sass/_overrides.scss */
+/* line 132, ../sass/_overrides.scss */
 .social-bar h4 {
   text-align: center;
   padding-bottom: 10px;
 }
-/* line 123, ../sass/_overrides.scss */
+/* line 136, ../sass/_overrides.scss */
 .social-bar ul {
   text-align: center;
 }
-/* line 126, ../sass/_overrides.scss */
+/* line 139, ../sass/_overrides.scss */
 .social-bar li {
   display: inline;
   padding: 10px;
 }
 @media screen and (min-width: 480px) {
-  /* line 116, ../sass/_overrides.scss */
+  /* line 129, ../sass/_overrides.scss */
   .social-bar {
     width: 50%;
     float: left;
   }
-  /* line 133, ../sass/_overrides.scss */
+  /* line 146, ../sass/_overrides.scss */
   .social-bar h4, .social-bar ul {
     text-align: left;
     margin-left: 40px;
   }
 }
 
-/* line 140, ../sass/_overrides.scss */
+/* line 153, ../sass/_overrides.scss */
 .copyright-info p {
   font-size: .75em;
   text-align: center;
   padding-bottom: 10px;
 }
 @media screen and (min-width: 480px) {
-  /* line 139, ../sass/_overrides.scss */
+  /* line 152, ../sass/_overrides.scss */
   .copyright-info {
     width: 50%;
     float: right;
   }
-  /* line 148, ../sass/_overrides.scss */
+  /* line 161, ../sass/_overrides.scss */
   .copyright-info p {
     margin-top: 50px;
     text-align: right;
@@ -410,12 +433,74 @@ footer {
   }
 }
 
-/* line 156, ../sass/_overrides.scss */
+/* line 169, ../sass/_overrides.scss */
 .intro-bio {
   padding-top: 50px;
 }
 
-/* line 160, ../sass/_overrides.scss */
+/* line 173, ../sass/_overrides.scss */
 .landing-case-logo {
   margin-top: 20px;
+}
+
+/* line 177, ../sass/_overrides.scss */
+.contact-form {
+  padding-top: 50px;
+  width: 85%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  /* line 177, ../sass/_overrides.scss */
+  .contact-form {
+    width: 40%;
+  }
+}
+/* line 184, ../sass/_overrides.scss */
+.contact-form input {
+  font-family: ff-more-web-pro;
+  font-size: 1em;
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid gray;
+  transition: border-bottom 0.1s ease-in;
+}
+/* line 193, ../sass/_overrides.scss */
+.contact-form input:focus {
+  border-bottom: 1px solid #F16868;
+}
+/* line 197, ../sass/_overrides.scss */
+.contact-form textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  font-family: ff-more-web-pro;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  height: 100px;
+}
+/* line 209, ../sass/_overrides.scss */
+.contact-form button {
+  background-color: #F16868;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 1em;
+  margin: 0 auto;
+}
+/* line 219, ../sass/_overrides.scss */
+.contact-form button:hover {
+  cursor: pointer;
+}
+
+/* line 225, ../sass/_overrides.scss */
+.form-container {
+  padding: 20px;
 }
