@@ -1,21 +1,39 @@
 //body {
 //    background-color: rgba(44,62,80,1);
-//    color: white;
+////    color: white;
 //}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+//    @media screen and (min-width: 480px) {
+//        display: inline-block;
+//        margin: 0 auto;
+//        width: 65%;
+//    }
+    @media screen and (min-width: 480px) {
+    width: 65%;
+    margin: 0 auto;
+    }
+}
 
 nav {
     padding-top:20px;
     padding-bottom:20px;
-    .nav-bar{
-        width: 85%;
-        margin: 0 auto;
-    }
+//    .nav-bar{
+//        width: 85%;
+//        margin: 0 auto;
+//    }
     .my-name{
         color: $main-color;
         text-align: center;
         @media screen and (min-width: 480px) {
             display: inline-block;
             width: 50%;
+            text-align: left;
+        }
+        & a:hover{
+            color: $main-color;
         }
    }
     .menu-bar{
@@ -43,20 +61,15 @@ nav {
 }
 
 .hero {
-//    height: 300px;
-    padding-left: 30px;
-    padding-right: 30px;
-//    background-color: lightgray;
     padding-top: 100px;
     padding-bottom: 30px;
     background-image:url("/images/magazines-desk-work-workspace.jpg");
     background-position: top center; 
     background-repeat:no-repeat;
-//    background-size: cover;
 }
 
 .about-hero {
-    padding-left: 30px;
+//    padding-left: 30px;
     padding-right: 30px;
     background-color: lightgray;
     padding-top: 100px;
@@ -64,16 +77,13 @@ nav {
 }
 
 .hero-copy{
-    @media screen and (min-width: 480px) {
-    width: 65%;
-    margin: 0 auto;
-    }
     h2 {
         line-height: 1.5;
     }
 }
 
 .case-studies, .contact {
+    width: 100%;
     .case-list {
         display: inline-block;
         vertical-align:top;
@@ -88,6 +98,11 @@ nav {
         }
         @media screen and (min-width: 480px) {
             width: 33%;
+//            &#landing-changeseed {
+//                width: 33%;
+//                margin-right:2px;
+//                margin-left: 2px;
+//            }
         }
         &#landing-changeseed {
             img {
@@ -98,6 +113,7 @@ nav {
                 font-size: 1.75em;
                 margin-bottom: 33px;
             }
+            float: right;
         }
         &#landing-blocbox {
             img {
@@ -214,10 +230,11 @@ footer {
         display: inline;
         padding-right: 10px;
         i {
-         background-color: white;
-         border-radius: 50%;
-         border: 1px solid black;
-         padding:10px;
+             background-color: white;
+    //         border-radius: 50%;
+             border: 1px solid $main-color;
+             padding:10px;
+            color: $main-color;
         }
     }
     @media screen and (min-width: 480px) {
@@ -246,11 +263,11 @@ footer {
     }
 }
 
-.intro-bio{
+.body-intro{
     padding-top: 50px;
 }
 
-.bio-story{
+.body-copy{
     margin-bottom: 20px;
 }
 
