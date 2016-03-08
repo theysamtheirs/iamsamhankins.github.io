@@ -220,6 +220,7 @@ footer {
 .social-bar {
     padding-top: 20px;
     padding-bottom: 20px;
+    text-align: center;
     h5 {
         padding-bottom: 10px;
     }
@@ -234,7 +235,6 @@ footer {
     //         border-radius: 50%;
              border: 1px solid $main-color;
              padding:10px;
-            color: $main-color;
         }
     }
     @media screen and (min-width: 480px) {

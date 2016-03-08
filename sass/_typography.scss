@@ -115,7 +115,7 @@ p{
 
 // ABOUT ME FONT SYTYLES
 
-.bio-body {
+.content-area {
     h3 {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -124,15 +124,14 @@ p{
         text-transform: uppercase;
         font-family: ff-enzo-web;
     }
-    width: 90%;
-    margin: 0 auto;
-    @media screen and (min-width: 480px) {
-        width: 65%;
-    }
-    .intro-bio{
+    .body-intro{
         p{
             font-size: 1.25em;
         }
+    }
+    img {
+        width: 100%;
+        margin: 10px 0;
     }
 }
 
@@ -145,5 +144,22 @@ p{
 #contact-hero {
     h1 {
         margin-bottom: 20px;
+    }
+}
+
+.side-note {
+    line-height: 1;
+    font-size: .75em;
+    background-color: yellow;
+    margin: 10px 0;
+}
+.body-copy {
+    ul {
+        margin-left: 30px;
+        list-style-type: circle;
+        li {
+            margin: 10px 0;
+            line-height: 1.5;
+        }
     }
 }
