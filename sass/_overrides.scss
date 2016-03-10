@@ -3,6 +3,10 @@
 ////    color: white;
 //}
 
+section{
+    margin-bottom: 0px;
+}
+
 .container {
     width: 85%;
     margin: 0 auto;
@@ -83,7 +87,6 @@ nav {
 }
 
 .case-studies, .contact {
-    width: 100%;
     .case-list {
         display: inline-block;
         vertical-align:top;
@@ -96,28 +99,24 @@ nav {
             margin-top: 155px;
             color: white;
         }
+        img {
+            height: 125px;
+            margin-bottom: 10px;
+        }
         @media screen and (min-width: 480px) {
             width: 33%;
-//            &#landing-changeseed {
-//                width: 33%;
-//                margin-right:2px;
-//                margin-left: 2px;
-//            }
         }
         &#landing-changeseed {
             img {
-                width: 125%;
                 margin-bottom: 10px;
             }
             h4 {
-                font-size: 1.75em;
+                font-size: 2em;
                 margin-bottom: 33px;
             }
-            float: right;
         }
         &#landing-blocbox {
             img {
-                width: 125%;
                 margin-left: -30px;
             }
         }
@@ -265,9 +264,6 @@ footer {
 
 .body-intro{
     padding-top: 50px;
-}
-
-.body-copy{
     margin-bottom: 20px;
 }
 
@@ -327,6 +323,42 @@ footer {
 
 .form-container {
     padding: 20px;
+}
+.images-section{
+    text-align: center;
+    margin: 20px 0;
+    .img-placeholder{
+        display: inline-block;
+        height: 200px;
+        width: 200px;
+        background-color: $main-color;
+        h4 {
+            padding-top: 100px;
+        }
+    }
+    figure {
+        display: inline-block;
+        img {
+            margin: 0 20px;
+        }
+        figcaption {
+            margin-top: 10px;
+        }
+    }
+}
+
+.the-problem {
+//    background-image: url("/images/sky-fog-rainy-mist.jpg");
+//    background-position: bottom left; 
+//    background-repeat:no-repeat;
+//    background-size: cover;
+    background-color: lighten(lightgrey, 10%);
+    padding-bottom: 20px;
+}
+
+.the-solution {
+    background-color: lighten($main-color, 10%);
+    padding-bottom: 20px;
 }
 
 .footer-content {
