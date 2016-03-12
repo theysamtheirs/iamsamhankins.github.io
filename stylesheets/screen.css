@@ -83,7 +83,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 16, ../sass/_typography.scss */
 body {
-  font-family: ff-enzo-web;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
 @media screen and (min-width: 480px) {
@@ -93,22 +93,21 @@ body {
   }
 }
 
-/* line 23, ../sass/_typography.scss */
+/* line 24, ../sass/_typography.scss */
 a {
   text-decoration: none;
   color: #FFA726;
 }
-/* line 26, ../sass/_typography.scss */
+/* line 27, ../sass/_typography.scss */
 a:hover {
   color: #29B6F6;
 }
 
-/* line 30, ../sass/_typography.scss */
+/* line 31, ../sass/_typography.scss */
 h1 {
   font-size: 3em;
   color: #FFA726;
-  font-family: ff-enzo-web;
-  font-weight: 300;
+  font-weight: 700;
   letter-spacing: 5px;
 }
 
@@ -127,43 +126,65 @@ h3 {
 /* line 47, ../sass/_typography.scss */
 h4 {
   font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
-/* line 51, ../sass/_typography.scss */
+/* line 52, ../sass/_typography.scss */
+h5 {
+  margin: 20px 0;
+  font: 1.25em;
+}
+
+/* line 56, ../sass/_typography.scss */
 p {
   line-height: 1.8;
-  font-family: "abril-text";
+  font-family: "pragmatica-web",sans-serif;
+  font-style: normal;
   font-weight: 300;
 }
-/* line 58, ../sass/_typography.scss */
+/* line 64, ../sass/_typography.scss */
 .contact p {
   text-align: center;
   width: 100%;
 }
 
-/* line 64, ../sass/_typography.scss */
+/* line 70, ../sass/_typography.scss */
+li {
+  font-family: "pragmatica-web",sans-serif;
+  font-style: normal;
+  font-weight: 200;
+}
+
+/* line 76, ../sass/_typography.scss */
+figcaption {
+  font-family: "pragmatica-web",sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* line 82, ../sass/_typography.scss */
 .section-header {
   padding-bottom: 40px;
 }
 
-/* line 70, ../sass/_typography.scss */
+/* line 88, ../sass/_typography.scss */
 .antha {
   color: #ffe5bf;
 }
 
-/* line 74, ../sass/_typography.scss */
+/* line 92, ../sass/_typography.scss */
 .landing-case-logo {
   width: 25%;
   margin: auto;
 }
 
-/* line 79, ../sass/_typography.scss */
+/* line 97, ../sass/_typography.scss */
 .brand-name {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* line 84, ../sass/_typography.scss */
+/* line 102, ../sass/_typography.scss */
 .brand-name#drift-list {
   font-family: "clarendon-urw";
   font-weight: 300;
@@ -179,18 +200,18 @@ p {
   margin-bottom: 20px;
 }
 
-/* line 99, ../sass/_typography.scss */
+/* line 117, ../sass/_typography.scss */
 #driftlist-bold {
   font-weight: 500;
 }
 
-/* line 103, ../sass/_typography.scss */
+/* line 121, ../sass/_typography.scss */
 #changeseed {
   font-family: "abril-text";
   color: white;
 }
 
-/* line 108, ../sass/_typography.scss */
+/* line 126, ../sass/_typography.scss */
 #blocbox {
   font-family: "league-gothic";
   color: white;
@@ -198,58 +219,76 @@ p {
   padding-bottom: 15px;
 }
 
-/* line 118, ../sass/_typography.scss */
+/* line 136, ../sass/_typography.scss */
 .content-area h3 {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: left;
-  font-size: 1.25em;
-  text-transform: uppercase;
-  font-family: ff-enzo-web;
+  font-size: 1.75em;
 }
-/* line 126, ../sass/_typography.scss */
+/* line 144, ../sass/_typography.scss */
+.content-area h4 {
+  font-size: 1.25em;
+}
+/* line 147, ../sass/_typography.scss */
 .content-area h2 {
   padding: 20px 0;
   text-align: center;
 }
-/* line 131, ../sass/_typography.scss */
+/* line 152, ../sass/_typography.scss */
 .content-area .body-intro p {
   font-size: 1.25em;
 }
-/* line 135, ../sass/_typography.scss */
+/* line 156, ../sass/_typography.scss */
 .content-area img {
   width: 100%;
-  margin: 10px 0;
+  margin: 20px 0;
+}
+/* line 159, ../sass/_typography.scss */
+.content-area img.sketch {
+  width: 45%;
 }
 
-/* line 141, ../sass/_typography.scss */
+/* line 165, ../sass/_typography.scss */
 .lead-text {
-  font-weight: bold;
+  font-family: "pragmatica-web",sans-serif;
+  font-style: normal;
+  font-weight: 700;
 }
 
-/* line 148, ../sass/_typography.scss */
+/* line 174, ../sass/_typography.scss */
 #contact-hero h1 {
   margin-bottom: 20px;
 }
 
-/* line 153, ../sass/_typography.scss */
+/* line 179, ../sass/_typography.scss */
 .side-note {
   line-height: 1;
   font-size: .75em;
   background-color: yellow;
-  margin: 10px 0;
+  margin: 10px 2.5em;
+  width: 85%;
+  display: inline-block;
 }
 
-/* line 160, ../sass/_typography.scss */
-.body-copy ul, .body-copy ol {
-  margin-left: 30px;
+/* line 188, ../sass/_typography.scss */
+.body-copy .highlights {
+  border: 1px solid black;
+  padding: 20px 0;
+  margin: 10px 0;
 }
-/* line 162, ../sass/_typography.scss */
+/* line 193, ../sass/_typography.scss */
+.body-copy ul, .body-copy ol {
+  margin: .75em 2.5em;
+}
+/* line 195, ../sass/_typography.scss */
 .body-copy ul li, .body-copy ol li {
+  font-weight: 400;
   margin: 10px 0;
   line-height: 1.5;
+  font-size: 1em;
 }
-/* line 167, ../sass/_typography.scss */
+/* line 202, ../sass/_typography.scss */
 .body-copy ul {
   list-style-type: circle;
 }
@@ -267,7 +306,7 @@ section {
 @media screen and (min-width: 480px) {
   /* line 10, ../sass/_overrides.scss */
   .container {
-    width: 65%;
+    width: 60%;
     margin: 0 auto;
   }
 }
@@ -331,8 +370,16 @@ nav .menu-bar li {
   background-position: top center;
   background-repeat: no-repeat;
 }
+/* line 73, ../sass/_overrides.scss */
+.hero .name-block {
+  margin: 20px 0;
+}
+/* line 76, ../sass/_overrides.scss */
+.hero h2 {
+  padding-bottom: 20px;
+}
 
-/* line 75, ../sass/_overrides.scss */
+/* line 82, ../sass/_overrides.scss */
 .about-hero {
   padding-right: 30px;
   background-color: lightgray;
@@ -340,17 +387,17 @@ nav .menu-bar li {
   padding-bottom: 20px;
 }
 
-/* line 84, ../sass/_overrides.scss */
+/* line 91, ../sass/_overrides.scss */
 .hero-copy h2 {
   line-height: 1.5;
 }
 
-/* line 89, ../sass/_overrides.scss */
+/* line 96, ../sass/_overrides.scss */
 .case-studies, .contact {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 90, ../sass/_overrides.scss */
+/* line 97, ../sass/_overrides.scss */
 .case-studies .case-list, .contact .case-list {
   display: inline-block;
   vertical-align: top;
@@ -361,40 +408,40 @@ nav .menu-bar li {
   text-align: center;
   position: relative;
 }
-/* line 98, ../sass/_overrides.scss */
+/* line 105, ../sass/_overrides.scss */
 .case-studies .case-list h5, .contact .case-list h5 {
   margin-top: 155px;
   color: white;
 }
-/* line 102, ../sass/_overrides.scss */
+/* line 109, ../sass/_overrides.scss */
 .case-studies .case-list img, .contact .case-list img {
   height: 125px;
   margin-bottom: 10px;
 }
 @media screen and (min-width: 480px) {
-  /* line 90, ../sass/_overrides.scss */
+  /* line 97, ../sass/_overrides.scss */
   .case-studies .case-list, .contact .case-list {
     width: 33%;
   }
 }
-/* line 110, ../sass/_overrides.scss */
+/* line 117, ../sass/_overrides.scss */
 .case-studies .case-list#landing-changeseed img, .contact .case-list#landing-changeseed img {
   margin-bottom: 10px;
 }
-/* line 113, ../sass/_overrides.scss */
+/* line 120, ../sass/_overrides.scss */
 .case-studies .case-list#landing-changeseed h4, .contact .case-list#landing-changeseed h4 {
   font-size: 2em;
   margin-bottom: 33px;
 }
-/* line 119, ../sass/_overrides.scss */
+/* line 126, ../sass/_overrides.scss */
 .case-studies .case-list#landing-blocbox img, .contact .case-list#landing-blocbox img {
   margin-left: -30px;
 }
-/* line 123, ../sass/_overrides.scss */
+/* line 130, ../sass/_overrides.scss */
 .case-studies .case-list:hover, .contact .case-list:hover {
   color: white;
 }
-/* line 127, ../sass/_overrides.scss */
+/* line 134, ../sass/_overrides.scss */
 .case-studies .case-list .case-specs, .contact .case-list .case-specs {
   position: absolute;
   top: 0px;
@@ -411,24 +458,24 @@ nav .menu-bar li {
   opacity: 0;
   padding-top: 75px;
 }
-/* line 144, ../sass/_overrides.scss */
+/* line 151, ../sass/_overrides.scss */
 .case-studies .case-list:hover .case-specs, .contact .case-list:hover .case-specs {
   opacity: 1;
 }
 
-/* line 153, ../sass/_overrides.scss */
+/* line 160, ../sass/_overrides.scss */
 .contact {
   background-color: #ededed;
   text-align: center;
 }
 
-/* line 158, ../sass/_overrides.scss */
+/* line 165, ../sass/_overrides.scss */
 footer {
   border-top: 1px solid black;
   height: 40px;
 }
 
-/* line 163, ../sass/_overrides.scss */
+/* line 170, ../sass/_overrides.scss */
 .with-border {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -438,17 +485,17 @@ footer {
   padding: 10px 20px 10px 20px;
 }
 
-/* line 172, ../sass/_overrides.scss */
+/* line 179, ../sass/_overrides.scss */
 #landing-changeseed {
   background-image: url("/images/changeseed-landing-image.png");
   background-size: cover;
 }
-/* line 175, ../sass/_overrides.scss */
+/* line 182, ../sass/_overrides.scss */
 #landing-changeseed h5 {
   margin-top: 135px;
 }
 
-/* line 180, ../sass/_overrides.scss */
+/* line 187, ../sass/_overrides.scss */
 #landing-driftlist {
   background-image: url("/images/drift-landing-bg.png");
   background-position: top center;
@@ -456,68 +503,68 @@ footer {
   background-size: cover;
 }
 
-/* line 209, ../sass/_overrides.scss */
+/* line 216, ../sass/_overrides.scss */
 #landing-blocbox {
   background-image: url("/images/blocbox-landing-image.png");
   background-position: top center;
   background-size: cover;
 }
-/* line 213, ../sass/_overrides.scss */
+/* line 220, ../sass/_overrides.scss */
 #landing-blocbox h5 {
   margin-top: 135px;
 }
 
-/* line 219, ../sass/_overrides.scss */
+/* line 226, ../sass/_overrides.scss */
 .social-bar {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 }
-/* line 223, ../sass/_overrides.scss */
+/* line 230, ../sass/_overrides.scss */
 .social-bar h5 {
   padding-bottom: 10px;
 }
-/* line 226, ../sass/_overrides.scss */
+/* line 233, ../sass/_overrides.scss */
 .social-bar ul {
   margin-top: 10px;
 }
-/* line 229, ../sass/_overrides.scss */
+/* line 236, ../sass/_overrides.scss */
 .social-bar li {
   display: inline;
   padding-right: 10px;
 }
-/* line 232, ../sass/_overrides.scss */
+/* line 239, ../sass/_overrides.scss */
 .social-bar li i {
   background-color: white;
   border: 1px solid #FFA726;
   padding: 10px;
 }
 @media screen and (min-width: 480px) {
-  /* line 219, ../sass/_overrides.scss */
+  /* line 226, ../sass/_overrides.scss */
   .social-bar {
     width: 50%;
     float: left;
   }
-  /* line 242, ../sass/_overrides.scss */
+  /* line 249, ../sass/_overrides.scss */
   .social-bar h4, .social-bar ul {
     text-align: left;
     margin-left: 40px;
   }
 }
 
-/* line 249, ../sass/_overrides.scss */
+/* line 256, ../sass/_overrides.scss */
 .copyright-info p {
   font-size: .75em;
   text-align: center;
   padding-bottom: 10px;
 }
 @media screen and (min-width: 480px) {
-  /* line 248, ../sass/_overrides.scss */
+  /* line 255, ../sass/_overrides.scss */
   .copyright-info {
     width: 50%;
     float: right;
   }
-  /* line 257, ../sass/_overrides.scss */
+  /* line 264, ../sass/_overrides.scss */
   .copyright-info p {
     margin-top: 50px;
     text-align: right;
@@ -525,30 +572,29 @@ footer {
   }
 }
 
-/* line 265, ../sass/_overrides.scss */
+/* line 272, ../sass/_overrides.scss */
 .body-intro {
-  padding-top: 50px;
-  margin-bottom: 20px;
+  padding: 50px 0;
 }
 
-/* line 270, ../sass/_overrides.scss */
+/* line 276, ../sass/_overrides.scss */
 .landing-case-logo {
   margin-top: 20px;
 }
 
-/* line 274, ../sass/_overrides.scss */
+/* line 280, ../sass/_overrides.scss */
 .contact-form {
   padding-top: 50px;
   width: 85%;
   margin: 0 auto;
 }
 @media screen and (min-width: 480px) {
-  /* line 274, ../sass/_overrides.scss */
+  /* line 280, ../sass/_overrides.scss */
   .contact-form {
     width: 60%;
   }
 }
-/* line 281, ../sass/_overrides.scss */
+/* line 287, ../sass/_overrides.scss */
 .contact-form input {
   font-family: ff-more-web-pro;
   font-size: 1em;
@@ -560,11 +606,11 @@ footer {
   border-bottom: 1px solid gray;
   transition: border-bottom 0.1s ease-in;
 }
-/* line 291, ../sass/_overrides.scss */
+/* line 297, ../sass/_overrides.scss */
 .contact-form input:focus {
   border-bottom: 1px solid #FFA726;
 }
-/* line 295, ../sass/_overrides.scss */
+/* line 301, ../sass/_overrides.scss */
 .contact-form textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -577,7 +623,7 @@ footer {
   margin-bottom: 30px;
   height: 200px;
 }
-/* line 307, ../sass/_overrides.scss */
+/* line 313, ../sass/_overrides.scss */
 .contact-form button {
   background-color: #FFA726;
   border: none;
@@ -590,59 +636,64 @@ footer {
   font-family: abril-text;
   margin: 0 auto;
 }
-/* line 318, ../sass/_overrides.scss */
+/* line 324, ../sass/_overrides.scss */
 .contact-form button:hover {
   cursor: pointer;
 }
 
-/* line 324, ../sass/_overrides.scss */
+/* line 330, ../sass/_overrides.scss */
 .form-container {
   padding: 20px;
 }
 
-/* line 327, ../sass/_overrides.scss */
+/* line 333, ../sass/_overrides.scss */
 .images-section {
   text-align: center;
   margin: 20px 0;
 }
-/* line 330, ../sass/_overrides.scss */
+/* line 336, ../sass/_overrides.scss */
 .images-section .img-placeholder {
   display: inline-block;
   height: 200px;
   width: 200px;
   background-color: #FFA726;
 }
-/* line 335, ../sass/_overrides.scss */
+/* line 341, ../sass/_overrides.scss */
 .images-section .img-placeholder h4 {
   padding-top: 100px;
 }
-/* line 339, ../sass/_overrides.scss */
+/* line 345, ../sass/_overrides.scss */
 .images-section figure {
   display: inline-block;
 }
-/* line 341, ../sass/_overrides.scss */
+/* line 347, ../sass/_overrides.scss */
 .images-section figure img {
   margin: 0 20px;
 }
-/* line 344, ../sass/_overrides.scss */
+/* line 350, ../sass/_overrides.scss */
 .images-section figure figcaption {
   margin-top: 10px;
 }
 
-/* line 350, ../sass/_overrides.scss */
+/* line 356, ../sass/_overrides.scss */
 .the-problem {
   background-color: #ededed;
   padding-bottom: 20px;
 }
 
-/* line 359, ../sass/_overrides.scss */
+/* line 365, ../sass/_overrides.scss */
 .the-solution {
   background-color: #ffbc59;
   padding-bottom: 20px;
 }
 
-/* line 364, ../sass/_overrides.scss */
+/* line 370, ../sass/_overrides.scss */
 .footer-content {
   width: 85%;
   margin: 0 auto;
+}
+
+/* line 375, ../sass/_overrides.scss */
+.personas {
+  background-color: azure;
 }

@@ -16,7 +16,7 @@ section{
 //        width: 65%;
 //    }
     @media screen and (min-width: 480px) {
-    width: 65%;
+    width: 60%;
     margin: 0 auto;
     }
 }
@@ -70,7 +70,14 @@ nav {
     background-image:url("/images/magazines-desk-work-workspace.jpg");
     background-position: top center; 
     background-repeat:no-repeat;
+    .name-block {
+        margin: 20px 0;
+    }
+    h2{
+        padding-bottom: 20px;
+    }
 }
+
 
 .about-hero {
 //    padding-left: 30px;
@@ -263,8 +270,7 @@ footer {
 }
 
 .body-intro{
-    padding-top: 50px;
-    margin-bottom: 20px;
+    padding: 50px 0;
 }
 
 .landing-case-logo {
@@ -364,4 +370,8 @@ footer {
 .footer-content {
     width: 85%;
     margin: 0 auto;
+}
+
+.personas {
+    background-color: azure;
 }
