@@ -278,19 +278,28 @@ figcaption {
   margin: 10px 0;
 }
 /* line 193, ../sass/_typography.scss */
-.body-copy ul, .body-copy ol {
+.body-copy ul {
+  list-style-type: circle;
   margin: .75em 2.5em;
 }
-/* line 195, ../sass/_typography.scss */
-.body-copy ul li, .body-copy ol li {
+/* line 196, ../sass/_typography.scss */
+.body-copy ul li {
   font-weight: 400;
   margin: 10px 0;
   line-height: 1.5;
   font-size: 1em;
 }
-/* line 202, ../sass/_typography.scss */
-.body-copy ul {
-  list-style-type: circle;
+/* line 203, ../sass/_typography.scss */
+.body-copy ol {
+  list-style-type: decimal;
+  margin: .75em 2.5em;
+}
+/* line 206, ../sass/_typography.scss */
+.body-copy ol li {
+  font-weight: 400;
+  margin: 10px 0;
+  line-height: 1.5;
+  font-size: 1em;
 }
 
 /* line 6, ../sass/_overrides.scss */
@@ -696,4 +705,5 @@ footer {
 /* line 375, ../sass/_overrides.scss */
 .personas {
   background-color: azure;
+  padding-bottom: 30px;
 }
