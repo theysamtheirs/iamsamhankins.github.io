@@ -275,7 +275,7 @@ figcaption {
 .body-copy .highlights {
   border: 1px solid black;
   padding: 20px 0;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 /* line 193, ../sass/_typography.scss */
 .body-copy ul {
@@ -300,6 +300,11 @@ figcaption {
   margin: 10px 0;
   line-height: 1.5;
   font-size: 1em;
+}
+
+/* line 216, ../sass/_typography.scss */
+.about-hero h2 {
+  line-height: 1.5;
 }
 
 /* line 6, ../sass/_overrides.scss */
@@ -663,13 +668,13 @@ footer {
 /* line 336, ../sass/_overrides.scss */
 .images-section .img-placeholder {
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   background-color: #FFA726;
 }
 /* line 341, ../sass/_overrides.scss */
 .images-section .img-placeholder h4 {
-  padding-top: 100px;
+  padding-top: 70px;
 }
 /* line 345, ../sass/_overrides.scss */
 .images-section figure {

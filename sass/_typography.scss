@@ -188,7 +188,7 @@ figcaption {
     .highlights {
         border: 1px solid black;
         padding: 20px 0;
-        margin: 10px 0;
+        margin: 20px 0;
     }
     ul{
         list-style-type: circle;
@@ -209,5 +209,11 @@ figcaption {
             line-height: 1.5;
             font-size: 1em;
         }
+    }
+}
+
+.about-hero {
+    h2{
+        line-height: 1.5;
     }
 }
