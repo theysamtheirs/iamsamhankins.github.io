@@ -16,7 +16,7 @@ section{
 //        width: 65%;
 //    }
     @media screen and (min-width: 480px) {
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
     }
 }
@@ -24,6 +24,7 @@ section{
 nav {
     padding-top:20px;
     padding-bottom:20px;
+    background-color: $dark-gray;
 //    .nav-bar{
 //        width: 85%;
 //        margin: 0 auto;
@@ -68,7 +69,8 @@ nav {
     padding-top: 100px;
     padding-bottom: 30px;
     background-image:url("/images/magazines-desk-work-workspace.jpg");
-    background-position: top center; 
+    background-size: 100%;
+    background-position: top right; 
     background-repeat:no-repeat;
     .name-block {
         margin: 20px 0;
@@ -158,7 +160,7 @@ nav {
 }
 
 .contact {
-    background-color: lighten(lightgray, 10%);
+    background-color: $light-grey;
     text-align: center;
 }
 
@@ -332,7 +334,14 @@ footer {
 }
 .images-section{
     text-align: center;
-    margin: 20px 0;
+    @media screen and (min-width: 480px){
+        figure {
+            width: 40%;
+            &.left {
+                margin-right: 10%;
+            }
+        }
+    }
     .img-placeholder{
         display: inline-block;
         height: 150px;
@@ -344,9 +353,6 @@ footer {
     }
     figure {
         display: inline-block;
-        img {
-            margin: 0 20px;
-        }
         figcaption {
             margin-top: 10px;
         }
@@ -358,7 +364,7 @@ footer {
 //    background-position: bottom left; 
 //    background-repeat:no-repeat;
 //    background-size: cover;
-    background-color: lighten(lightgrey, 10%);
+    background-color: $light-grey;
     padding-bottom: 20px;
 }
 
@@ -370,9 +376,4 @@ footer {
 .footer-content {
     width: 85%;
     margin: 0 auto;
-}
-
-.personas {
-    background-color: azure;
-    padding-bottom: 30px;
 }
