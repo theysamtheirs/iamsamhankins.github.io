@@ -78,6 +78,34 @@ nav {
     h2{
         padding-bottom: 20px;
     }
+    &#driftlist-hero{
+        padding-top:300px;
+        padding-bottom: 100px;
+        background-image:url("/assets/driftlist/hero-background.jpg");
+//        height: 375px;
+        background-size: 100%;
+        background-position: center right; 
+        background-repeat:no-repeat;
+        .hero-copy {
+            color: white;
+            background-color: rgba(34,49,63,.3);
+            padding: 20px 0;
+        }
+    }
+    &#changeseed-hero{
+        padding-top:300px;
+        padding-bottom: 100px;
+        background-image:url("/assets/changeseed/background-hero.jpg");
+//        height: 375px;
+        background-size: 100%;
+        background-position: top right; 
+        background-repeat:no-repeat;
+        .hero-copy {
+            color: white;
+            background-color: rgba(34,49,63,.3);
+            padding: 20px 0;
+        }
+    }
 }
 
 
