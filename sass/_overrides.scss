@@ -3,8 +3,26 @@
 ////    color: white;
 //}
 
+.mobile-hidden {
+    @media screen and (max-width: 480px){
+        display: none;
+    }
+}
+
+.desktop-hidden {
+    @media screen and (min-width: 480px){
+        display: none;
+    }
+}
+
 section{
     margin-bottom: 0px;
+}
+
+.conclusion {
+    padding: 3em 0;
+    background: $dark-grey;
+    color: white;
 }
 
 .container {
@@ -94,15 +112,31 @@ nav {
     }
     &#driftlist-hero{
 //        padding-top: 160px;
-        background-image:url("/assets/driftlist/hero-background.jpg");
+        background-image:url("/assets/driftlist/hero-background-mobile.jpg");
+        background-size: cover;
+        background-position: center center; 
+        background-repeat:no-repeat;
+        @media screen and (min-width: 480px){
+            background-image:url("/assets/driftlist/hero-background.jpg");
+            background-size: cover;
+            background-position: center center; 
+            background-repeat:no-repeat;
+        }
 //        height: 375px;
         background-size: cover;
         background-position: center center; 
         background-repeat:no-repeat;
         .hero-copy {
+            margin-top: 200px;
             color: white;
             background-color: rgba(34,49,63,.5);
             padding: 20px 0;
+            @media screen and (max-width: 480px){
+            h2 {
+                font-size: 1.5em;
+                padding: 10px 0;
+            }
+            }
         }
     }
     &#changeseed-hero{
@@ -143,7 +177,12 @@ nav {
     }
 }
 
+.case-studies {
+    padding: 10px 0;
+}
+
 .case-studies, .contact {
+    text-align: center;
     .case-list {
         display: inline-block;
         vertical-align:top;
@@ -277,6 +316,8 @@ footer {
 
 }
 
+
+
 .social-bar {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -325,6 +366,12 @@ footer {
 
 .body-intro{
     padding: 50px 0;
+}
+
+.body-copy {
+    img {
+        margin: 10px 0;
+    }
 }
 
 .landing-case-logo {
