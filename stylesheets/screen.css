@@ -104,7 +104,6 @@ h1 {
   font-size: 3em;
   color: #FFA726;
   font-weight: 700;
-  letter-spacing: 5px;
 }
 
 /* line 34, ../sass/_typography.scss */
@@ -394,12 +393,15 @@ nav .my-name {
 nav .my-name a:hover {
   color: #FFA726;
 }
-/* line 61, ../sass/_overrides.scss */
-nav .menu-bar {
-  margin-top: 20px;
-  text-align: center;
+/* line 60, ../sass/_overrides.scss */
+nav .my-name .ux-design {
+  font-weight: 100;
 }
 /* line 64, ../sass/_overrides.scss */
+nav .menu-bar {
+  text-align: center;
+}
+/* line 66, ../sass/_overrides.scss */
 nav .menu-bar li {
   display: inline;
   padding-right: 10px;
@@ -411,14 +413,14 @@ nav .menu-bar li {
   -ms-transition: border-bottom .5s;
   -o-transition: border-bottom .5s;
 }
-/* line 74, ../sass/_overrides.scss */
+/* line 76, ../sass/_overrides.scss */
 nav .menu-bar li:hover {
   border-bottom: 2px solid #FFA726;
 }
 @media screen and (min-width: 480px) {
-  /* line 61, ../sass/_overrides.scss */
+  /* line 64, ../sass/_overrides.scss */
   nav .menu-bar {
-    margin-top: 5px;
+    margin-top: 15px;
     float: right;
     display: inline-block;
     vertical-align: top;
@@ -426,7 +428,7 @@ nav .menu-bar li:hover {
   }
 }
 
-/* line 88, ../sass/_overrides.scss */
+/* line 90, ../sass/_overrides.scss */
 .button {
   display: inline-block;
   padding: 20px;
@@ -434,12 +436,12 @@ nav .menu-bar li:hover {
   color: white;
   transition: background-color .25s ease-in;
 }
-/* line 93, ../sass/_overrides.scss */
+/* line 96, ../sass/_overrides.scss */
 .button:hover {
   background-color: #ffc673;
 }
 
-/* line 99, ../sass/_overrides.scss */
+/* line 102, ../sass/_overrides.scss */
 .hero {
   padding-top: 50px;
   padding-bottom: 80px;
@@ -449,15 +451,28 @@ nav .menu-bar li:hover {
   background-position: top center;
   background-repeat: no-repeat;
 }
-/* line 107, ../sass/_overrides.scss */
-.hero .name-block {
-  margin-bottom: 20px;
-}
 /* line 110, ../sass/_overrides.scss */
-.hero h2 {
-  padding-bottom: 20px;
+.hero .hero-overlay {
+  background-color: rgba(1, 1, 1, 0.2);
 }
 /* line 113, ../sass/_overrides.scss */
+.hero .name-block {
+  padding-top: 40px;
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+/* line 119, ../sass/_overrides.scss */
+.hero .hero-copy h2 {
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px 0;
+  line-height: 1;
+}
+/* line 125, ../sass/_overrides.scss */
+.hero .hero-copy p {
+  color: #FFA726;
+}
+/* line 129, ../sass/_overrides.scss */
 .hero#driftlist-hero {
   background-image: url("/assets/driftlist/hero-background-mobile.jpg");
   background-size: cover;
@@ -468,7 +483,7 @@ nav .menu-bar li:hover {
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 480px) {
-  /* line 113, ../sass/_overrides.scss */
+  /* line 129, ../sass/_overrides.scss */
   .hero#driftlist-hero {
     background-image: url("/assets/driftlist/hero-background.jpg");
     background-size: cover;
@@ -476,7 +491,7 @@ nav .menu-bar li:hover {
     background-repeat: no-repeat;
   }
 }
-/* line 129, ../sass/_overrides.scss */
+/* line 145, ../sass/_overrides.scss */
 .hero#driftlist-hero .hero-copy {
   margin-top: 200px;
   color: white;
@@ -484,36 +499,44 @@ nav .menu-bar li:hover {
   padding: 20px 0;
 }
 @media screen and (max-width: 480px) {
-  /* line 135, ../sass/_overrides.scss */
+  /* line 151, ../sass/_overrides.scss */
   .hero#driftlist-hero .hero-copy h2 {
     font-size: 1.5em;
     padding: 10px 0;
   }
 }
-/* line 142, ../sass/_overrides.scss */
+/* line 158, ../sass/_overrides.scss */
 .hero#changeseed-hero {
   background-image: url("/assets/changeseed/background-hero.jpg");
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
 }
-/* line 150, ../sass/_overrides.scss */
+/* line 166, ../sass/_overrides.scss */
 .hero#changeseed-hero .hero-copy {
+  margin-top: 200px;
   color: white;
   background-color: rgba(34, 49, 63, 0.5);
   padding: 20px 0;
 }
-/* line 156, ../sass/_overrides.scss */
+@media screen and (max-width: 480px) {
+  /* line 175, ../sass/_overrides.scss */
+  .hero#changeseed-hero .hero-copy h2 {
+    font-size: 1.5em;
+    padding: 10px 0;
+  }
+}
+/* line 182, ../sass/_overrides.scss */
 .hero .down-arrow {
   margin-top: 30px;
   text-align: center;
 }
-/* line 159, ../sass/_overrides.scss */
+/* line 185, ../sass/_overrides.scss */
 .hero .down-arrow h4 {
   margin-bottom: 0px;
 }
 
-/* line 166, ../sass/_overrides.scss */
+/* line 192, ../sass/_overrides.scss */
 .about-hero {
   padding-right: 30px;
   background-color: lightgray;
@@ -521,21 +544,21 @@ nav .menu-bar li:hover {
   padding-bottom: 20px;
 }
 
-/* line 175, ../sass/_overrides.scss */
+/* line 201, ../sass/_overrides.scss */
 .hero-copy h2 {
   line-height: 1.5;
 }
 
-/* line 180, ../sass/_overrides.scss */
+/* line 206, ../sass/_overrides.scss */
 .case-studies {
   padding: 10px 0;
 }
 
-/* line 184, ../sass/_overrides.scss */
+/* line 210, ../sass/_overrides.scss */
 .case-studies, .contact {
   text-align: center;
 }
-/* line 186, ../sass/_overrides.scss */
+/* line 212, ../sass/_overrides.scss */
 .case-studies .case-list, .contact .case-list {
   display: inline-block;
   vertical-align: top;
@@ -545,40 +568,46 @@ nav .menu-bar li:hover {
   text-align: center;
   position: relative;
 }
-/* line 194, ../sass/_overrides.scss */
+/* line 220, ../sass/_overrides.scss */
 .case-studies .case-list h5, .contact .case-list h5 {
   margin-top: 155px;
   color: white;
 }
-/* line 198, ../sass/_overrides.scss */
+/* line 224, ../sass/_overrides.scss */
 .case-studies .case-list img, .contact .case-list img {
   height: 125px;
   margin-bottom: 10px;
 }
 @media screen and (min-width: 480px) {
-  /* line 186, ../sass/_overrides.scss */
+  /* line 212, ../sass/_overrides.scss */
   .case-studies .case-list, .contact .case-list {
     width: 33%;
   }
 }
-/* line 206, ../sass/_overrides.scss */
+/* line 232, ../sass/_overrides.scss */
 .case-studies .case-list#landing-changeseed img, .contact .case-list#landing-changeseed img {
   margin-bottom: 10px;
 }
-/* line 209, ../sass/_overrides.scss */
+/* line 235, ../sass/_overrides.scss */
 .case-studies .case-list#landing-changeseed h4, .contact .case-list#landing-changeseed h4 {
   font-size: 2em;
   margin-bottom: 33px;
 }
-/* line 215, ../sass/_overrides.scss */
+@media screen and (max-width: 480px) {
+  /* line 231, ../sass/_overrides.scss */
+  .case-studies .case-list#landing-changeseed, .contact .case-list#landing-changeseed {
+    margin: 10px 0;
+  }
+}
+/* line 244, ../sass/_overrides.scss */
 .case-studies .case-list#landing-blocbox img, .contact .case-list#landing-blocbox img {
   margin-left: -30px;
 }
-/* line 219, ../sass/_overrides.scss */
+/* line 248, ../sass/_overrides.scss */
 .case-studies .case-list:hover, .contact .case-list:hover {
   color: white;
 }
-/* line 223, ../sass/_overrides.scss */
+/* line 252, ../sass/_overrides.scss */
 .case-studies .case-list .case-specs, .contact .case-list .case-specs {
   position: absolute;
   top: 0px;
@@ -595,12 +624,12 @@ nav .menu-bar li:hover {
   opacity: 0;
   padding-top: 75px;
 }
-/* line 240, ../sass/_overrides.scss */
+/* line 269, ../sass/_overrides.scss */
 .case-studies .case-list:hover .case-specs, .contact .case-list:hover .case-specs {
   opacity: 1;
 }
 
-/* line 249, ../sass/_overrides.scss */
+/* line 278, ../sass/_overrides.scss */
 .contact {
   background-color: #2c3e50;
   color: #FFA726;
@@ -608,13 +637,13 @@ nav .menu-bar li:hover {
   padding: 50px 0;
 }
 
-/* line 256, ../sass/_overrides.scss */
+/* line 285, ../sass/_overrides.scss */
 footer {
   border-top: 1px solid black;
   height: 40px;
 }
 
-/* line 261, ../sass/_overrides.scss */
+/* line 290, ../sass/_overrides.scss */
 .with-border {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -624,17 +653,17 @@ footer {
   padding: 10px 20px 10px 20px;
 }
 
-/* line 270, ../sass/_overrides.scss */
+/* line 299, ../sass/_overrides.scss */
 #landing-changeseed {
   background-image: url("/images/changeseed-landing-image.png");
   background-size: cover;
 }
-/* line 273, ../sass/_overrides.scss */
+/* line 302, ../sass/_overrides.scss */
 #landing-changeseed h5 {
   margin-top: 135px;
 }
 
-/* line 280, ../sass/_overrides.scss */
+/* line 309, ../sass/_overrides.scss */
 #landing-driftlist {
   background-image: url("/images/drift-landing-bg.png");
   background-position: top center;
@@ -642,68 +671,68 @@ footer {
   background-size: cover;
 }
 
-/* line 309, ../sass/_overrides.scss */
+/* line 338, ../sass/_overrides.scss */
 #landing-blocbox {
   background-image: url("/images/blocbox-landing-image.png");
   background-position: top center;
   background-size: cover;
 }
-/* line 313, ../sass/_overrides.scss */
+/* line 342, ../sass/_overrides.scss */
 #landing-blocbox h5 {
   margin-top: 135px;
 }
 
-/* line 321, ../sass/_overrides.scss */
+/* line 350, ../sass/_overrides.scss */
 .social-bar {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 }
-/* line 325, ../sass/_overrides.scss */
+/* line 354, ../sass/_overrides.scss */
 .social-bar h5 {
   padding-bottom: 10px;
 }
-/* line 328, ../sass/_overrides.scss */
+/* line 357, ../sass/_overrides.scss */
 .social-bar ul {
   margin-top: 10px;
 }
-/* line 331, ../sass/_overrides.scss */
+/* line 360, ../sass/_overrides.scss */
 .social-bar li {
   display: inline;
   padding-right: 10px;
 }
-/* line 334, ../sass/_overrides.scss */
+/* line 363, ../sass/_overrides.scss */
 .social-bar li i {
   background-color: white;
   border: 1px solid #FFA726;
   padding: 10px;
 }
 @media screen and (min-width: 480px) {
-  /* line 321, ../sass/_overrides.scss */
+  /* line 350, ../sass/_overrides.scss */
   .social-bar {
     width: 50%;
     float: left;
   }
-  /* line 344, ../sass/_overrides.scss */
+  /* line 373, ../sass/_overrides.scss */
   .social-bar h4, .social-bar ul {
     text-align: left;
     margin-left: 40px;
   }
 }
 
-/* line 351, ../sass/_overrides.scss */
+/* line 380, ../sass/_overrides.scss */
 .copyright-info p {
-  font-size: .75em;
+  font-size: .7em;
   text-align: center;
   padding-bottom: 10px;
 }
 @media screen and (min-width: 480px) {
-  /* line 350, ../sass/_overrides.scss */
+  /* line 379, ../sass/_overrides.scss */
   .copyright-info {
     width: 50%;
     float: right;
   }
-  /* line 359, ../sass/_overrides.scss */
+  /* line 388, ../sass/_overrides.scss */
   .copyright-info p {
     margin-top: 50px;
     text-align: right;
@@ -711,36 +740,36 @@ footer {
   }
 }
 
-/* line 367, ../sass/_overrides.scss */
+/* line 396, ../sass/_overrides.scss */
 .body-intro {
   padding: 50px 0;
 }
 
-/* line 372, ../sass/_overrides.scss */
+/* line 401, ../sass/_overrides.scss */
 .body-copy img {
   margin: 10px 0;
 }
 
-/* line 377, ../sass/_overrides.scss */
+/* line 406, ../sass/_overrides.scss */
 .landing-case-logo {
   margin-top: 20px;
 }
 
-/* line 381, ../sass/_overrides.scss */
+/* line 410, ../sass/_overrides.scss */
 .contact-form {
   padding-top: 50px;
   width: 85%;
   margin: 0 auto;
 }
 @media screen and (min-width: 480px) {
-  /* line 381, ../sass/_overrides.scss */
+  /* line 410, ../sass/_overrides.scss */
   .contact-form {
     width: 60%;
   }
 }
-/* line 388, ../sass/_overrides.scss */
+/* line 417, ../sass/_overrides.scss */
 .contact-form input {
-  font-family: ff-more-web-pro;
+  font-family: "pragmatica-web",sans-serif;
   font-size: 1em;
   border-radius: 0px;
   margin-bottom: 30px;
@@ -750,25 +779,33 @@ footer {
   border-bottom: 1px solid gray;
   transition: border-bottom 0.1s ease-in;
 }
-/* line 398, ../sass/_overrides.scss */
+/* line 427, ../sass/_overrides.scss */
 .contact-form input:focus {
+  outline: none;
   border-bottom: 1px solid #FFA726;
 }
-/* line 402, ../sass/_overrides.scss */
+/* line 432, ../sass/_overrides.scss */
 .contact-form textarea {
+  font-family: "pragmatica-web",sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   padding: 10px;
   font-size: 1em;
-  font-family: ff-more-web-pro;
   line-height: 1.5;
   margin-bottom: 30px;
   height: 200px;
 }
-/* line 414, ../sass/_overrides.scss */
+/* line 443, ../sass/_overrides.scss */
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid #FFA726;
+}
+/* line 448, ../sass/_overrides.scss */
 .contact-form button {
+  font-family: "pragmatica-web",sans-serif;
+  font-weight: 200;
   background-color: #FFA726;
   border: none;
   color: white;
@@ -777,66 +814,65 @@ footer {
   text-decoration: none;
   display: block;
   font-size: 1em;
-  font-family: abril-text;
   margin: 0 auto;
 }
-/* line 425, ../sass/_overrides.scss */
+/* line 460, ../sass/_overrides.scss */
 .contact-form button:hover {
   cursor: pointer;
 }
 
-/* line 431, ../sass/_overrides.scss */
+/* line 466, ../sass/_overrides.scss */
 .form-container {
   padding: 20px;
 }
 
-/* line 434, ../sass/_overrides.scss */
+/* line 469, ../sass/_overrides.scss */
 .images-section {
   text-align: center;
 }
 @media screen and (min-width: 480px) {
-  /* line 437, ../sass/_overrides.scss */
+  /* line 472, ../sass/_overrides.scss */
   .images-section figure {
     width: 40%;
   }
-  /* line 439, ../sass/_overrides.scss */
+  /* line 474, ../sass/_overrides.scss */
   .images-section figure.left {
     margin-right: 10%;
   }
 }
-/* line 444, ../sass/_overrides.scss */
+/* line 479, ../sass/_overrides.scss */
 .images-section .img-placeholder {
   display: inline-block;
   height: 150px;
   width: 150px;
   background-color: #FFA726;
 }
-/* line 449, ../sass/_overrides.scss */
+/* line 484, ../sass/_overrides.scss */
 .images-section .img-placeholder h4 {
   padding-top: 70px;
 }
-/* line 453, ../sass/_overrides.scss */
+/* line 488, ../sass/_overrides.scss */
 .images-section figure {
   display: inline-block;
 }
-/* line 455, ../sass/_overrides.scss */
+/* line 490, ../sass/_overrides.scss */
 .images-section figure figcaption {
   margin-top: 10px;
 }
 
-/* line 461, ../sass/_overrides.scss */
+/* line 496, ../sass/_overrides.scss */
 .the-problem {
   background-color: #d0d0d0;
   padding-bottom: 20px;
 }
 
-/* line 470, ../sass/_overrides.scss */
+/* line 505, ../sass/_overrides.scss */
 .the-solution {
   background-color: #ffbc59;
   padding-bottom: 20px;
 }
 
-/* line 475, ../sass/_overrides.scss */
+/* line 510, ../sass/_overrides.scss */
 .footer-content {
   width: 85%;
   margin: 0 auto;
