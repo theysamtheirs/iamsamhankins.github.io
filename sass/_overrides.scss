@@ -116,6 +116,9 @@ nav {
         text-shadow: 0px 0px 4px rgba(0,0,0,0.2);
     }
     & .hero-copy{
+        h1{
+            text-shadow: 0px 1px 5px rgba(0,0,0,0.7);
+        }
         h2{
             text-shadow: 0px 0px 5px rgba(0,0,0,0.7);
             color: white;
@@ -145,7 +148,7 @@ nav {
         .hero-copy {
             margin-top: 200px;
             color: white;
-            background-color: rgba(34,49,63,.5);
+            background-color: rgba(34,49,63,.6);
             padding: 20px 0;
             @media screen and (max-width: 480px){
             h2 {
@@ -166,11 +169,8 @@ nav {
         .hero-copy {
             margin-top: 200px;
             color: white;
-            background-color: rgba(34,49,63,.5);
+            background-color: rgba(34,49,63,.6);
             padding: 20px 0;
-            h1 {
-                
-            }
             @media screen and (max-width: 480px){
             h2 {
                 font-size: 1.5em;
@@ -188,7 +188,10 @@ nav {
     }
 }
 
-
+.first-figure {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
 .about-hero {
 //    padding-left: 30px;
     padding-right: 30px;
