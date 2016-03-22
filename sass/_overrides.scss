@@ -83,7 +83,7 @@ nav {
         }
         margin-top: 10px;
         @media screen and (min-width: 480px) {
-//            margin-top: 15px;
+            margin-top: 0px;
             float: right;
             display: inline-block;
             vertical-align: top;
@@ -187,6 +187,24 @@ nav {
             }
             }
         }
+    }
+    &#contact-hero {
+         .hero-copy {
+        margin-top: 200px;
+        color: white;
+        background-color: rgba(34,49,63,.6);
+        padding: 20px 0;
+        @media screen and (max-width: 480px){
+        h1 {
+            font-size: 2.5em;
+            color: white;
+            padding: 10px 0;
+        }
+            p{
+                color: white;
+            }
+        }
+        }   
     }
     .down-arrow {
         margin-top: 30px;
@@ -303,7 +321,7 @@ nav {
 
 footer {
     border-top: 1px solid black;
-    height: 40px;
+    height: 100%;
 }
 
 .with-border{
@@ -369,6 +387,7 @@ footer {
     padding-bottom: 20px;
     text-align: center;
     h4 {
+        color: $dark-grey;
         margin: .75em 0;
         @media screen and (min-width: 480px){
             margin: 0;
@@ -409,7 +428,7 @@ footer {
         width: 50%;
         float: right;
         p {
-            padding-top: 30px;
+            padding-top: 20px;
             text-align: right;
             margin-right: 40px;
         }
@@ -436,6 +455,9 @@ footer {
     margin: 0 auto;
     @media screen and (min-width: 480px) {
         width: 60%;
+    }
+    h3{
+        text-align: center;
     }
     input {
         font-family: "pragmatica-web",sans-serif;
@@ -517,22 +539,34 @@ footer {
     }
 }
 
+.user-flow {
+    & figure {
+        @media screen and (min-width: 480px){
+            margin: 20px 0;
+        }
+    }
+}
+
+#drift-comp {
+    margin: 1.5em 0px;
+}
+
 .the-problem {
 //    background-image: url("/images/sky-fog-rainy-mist.jpg");
 //    background-position: bottom left; 
 //    background-repeat:no-repeat;
 //    background-size: cover;
     background-color: $light-grey;
-    padding: 2.5em 0px;
+    padding: 2.75em 0px;
 }
 
 .the-solution {
     background-color: lighten($main-color, 10%);
-    padding: 2.5em 0px;
+    padding: 2.75em 0px;
 }
 
 .the-process{
-    padding: 2.5em 0px;
+    padding: 2.75em 0px;
     h2 {
         padding-bottom: 0;
     }
