@@ -46,6 +46,9 @@ nav {
 //        width: 85%;
 //        margin: 0 auto;
 //    }
+    h4{
+        margin: 0;
+    }
     .my-name{
         color: $main-color;
         text-align: center;
@@ -63,6 +66,7 @@ nav {
    }
     .menu-bar{
         text-align: center;
+        padding-top: 5px;
         li {
             display: inline;
             padding-right: 10px;
@@ -77,12 +81,13 @@ nav {
                 border-bottom: 2px solid $main-color;
             }
         }
+        margin-top: 10px;
         @media screen and (min-width: 480px) {
-            margin-top: 15px;
+//            margin-top: 15px;
             float: right;
             display: inline-block;
             vertical-align: top;
-            width: 50%;
+//            width: 50%;
         }
     }
 }
@@ -103,10 +108,13 @@ nav {
     padding-top: 50px;
     padding-bottom: 80px;
     height: 450px;
-    background-image:url("/images/magazines-desk-work-workspace.jpg");
+    background-image:url("/images/land.jpeg");
     background-size: cover;
-    background-position: top center; 
     background-repeat:no-repeat;
+    background-position: bottom left; 
+    @media screen and (min-width: 480px){
+        background-position: center center; 
+    }
     .hero-overlay{
         background-color: rgba(1,1,1,.2);
     }
@@ -127,6 +135,7 @@ nav {
         }
         p {
             color: $main-color;
+            font-weight: 400;
         }
     }
     &#driftlist-hero{
@@ -208,6 +217,9 @@ nav {
 
 .case-studies {
     padding: 10px 0;
+    @media screen and (min-width: 480px){
+        padding-bottom: 50px;
+    }
 }
 
 .case-studies, .contact {
@@ -282,7 +294,11 @@ nav {
     background-color: $dark-grey;
     color: $main-color;
     text-align: center;
-    padding: 50px 0;
+    padding: 3em 0;
+    h3 {
+        padding-top: 0px;
+        color: white;
+    }
 }
 
 footer {
@@ -348,12 +364,16 @@ footer {
 
 }
 
-
-
 .social-bar {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
+    h4 {
+        margin: .75em 0;
+        @media screen and (min-width: 480px){
+            margin: 0;
+        }
+    }
     h5 {
         padding-bottom: 10px;
     }
@@ -375,7 +395,7 @@ footer {
         float: left;
         h4, ul {
         text-align: left;
-        margin-left: 40px;
+//        margin-left: 40px;
         }
     }
 }
@@ -389,7 +409,7 @@ footer {
         width: 50%;
         float: right;
         p {
-            margin-top: 50px;
+            padding-top: 30px;
             text-align: right;
             margin-right: 40px;
         }
@@ -397,7 +417,7 @@ footer {
 }
 
 .body-intro{
-    padding: 50px 0;
+    padding: 2.5em 0;
 }
 
 .body-copy {
@@ -490,6 +510,7 @@ footer {
     }
     figure {
         display: inline-block;
+        margin: 10px 0;
         figcaption {
             margin-top: 10px;
         }
@@ -502,12 +523,19 @@ footer {
 //    background-repeat:no-repeat;
 //    background-size: cover;
     background-color: $light-grey;
-    padding-bottom: 20px;
+    padding: 2.5em 0px;
 }
 
 .the-solution {
     background-color: lighten($main-color, 10%);
-    padding-bottom: 20px;
+    padding: 2.5em 0px;
+}
+
+.the-process{
+    padding: 2.5em 0px;
+    h2 {
+        padding-bottom: 0;
+    }
 }
 
 .footer-content {

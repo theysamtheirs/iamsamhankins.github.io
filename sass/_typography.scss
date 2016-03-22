@@ -15,7 +15,6 @@ visibility: visible;
 
 body {
     font-family: 'Montserrat', sans-serif;
-    //    font-family: ff-enzo-web;
     font-size: 16px;
     @media screen and (min-width: 480px) {
         font-size: 20px;
@@ -39,16 +38,18 @@ h2 {
 h3 {
     font-size: 1.75em;
     font-weight: 700;
-    text-align: center;
+//    text-align: center;
 }
 h4 {
     font-size: 1.5em;
-    margin: 10px 0px;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
 h5 {
     margin: 20px 0;
     font: 1.25em;
+    line-height: 1.5;
 }
 p{
     line-height: 1.8;
@@ -147,18 +148,19 @@ figcaption {
 .content-area {
     h3 {
         padding-bottom: 10px;
-        margin: 20px 0;
-        text-align: center;
-        font-size: 1.75em;
+        margin-top: 40px;
+        margin-bottom: 20px;
+//        text-align: center;
+        font-size: 1.5em;
 //        text-transform: uppercase;
 //        font-family: ff-enzo-web;
-        border-bottom: 3px solid orange;
+        border-bottom: 2px solid orange;
     }
     h4 {
         font-size: 1.25em;
     }
     h2 {
-        padding: 20px 0;
+        padding-bottom: .75em;
         text-align: center;
     }
     .body-intro{
@@ -196,16 +198,26 @@ figcaption {
 }
 
 .side-note {
-    line-height: 1;
-    font-size: .75em;
-    background-color: yellow;
-    margin: 10px 2.5em;
+    line-height: 1.2;
+    font-size: .9em;
+    background-color: #eee;
+    margin: 10px 1em;
+    padding: 10px;
     width: 85%;
     display: inline-block;
 }
+
+.callout-bar {
+    margin: 20px 0;
+    h5 {
+        margin-top: 0;
+    }
+    background-color: #eee;
+    padding: 20px;
+}
 .body-copy {
     .highlights {
-        border: 1px solid black;
+        background-color: lighten($main-color, 20%);
         padding: 20px 0;
         margin: 20px 0;
     }
