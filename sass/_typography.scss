@@ -211,10 +211,12 @@ figcaption {
 .side-note {
     line-height: 1.2;
     font-size: .9em;
-    background-color: #eee;
+    font-weight: 300;
+    font-style: italic;
+//    background-color: #eee;
     margin: 10px 1em;
     padding: 10px;
-    width: 85%;
+//    width: 85%;
     display: inline-block;
 }
 
@@ -237,7 +239,7 @@ figcaption {
         list-style-type: circle;
         margin: .75em 2.5em;
         li {
-            font-weight: 400;
+//            font-weight: 400;
             margin: 10px 0;
             line-height: 1.5;
             font-size: 1em;
