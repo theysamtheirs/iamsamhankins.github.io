@@ -48,6 +48,7 @@ nav {
 //    }
     h4{
         margin: 0;
+        font-size: 1em;
     }
     .my-name{
         color: $main-color;
@@ -66,8 +67,9 @@ nav {
    }
     .menu-bar{
         text-align: center;
-        padding-top: 5px;
+//        padding-top: 5px;
         li {
+            font-size: .8em;
             display: inline;
             padding-right: 10px;
             padding-left: 10px;
@@ -116,12 +118,12 @@ nav {
         background-position: center center; 
     }
     .hero-overlay{
-        background-color: rgba(34,49,63,.6);
+        background-color: rgba(34,49,63,.4);
         height: 580px;
         margin-top: -50px;
     }
     .name-block {
-        padding-top: 40px;
+        padding-top: 100px;
         margin-bottom: 10px;
         text-shadow: 0px 0px 4px rgba(0,0,0,0.2);
     }
@@ -266,7 +268,8 @@ nav {
         background-color: gray;
         text-align: center;
         h5{
-            margin-top: 155px;
+            padding-top: 1em;
+            margin: 0;
             color: white;
         }
         img {
@@ -308,8 +311,8 @@ nav {
         text-align: center;
         height: 100%;
         z-index: 1;
-        transition: all 300ms ease-in-out;
-        background-color: rgba(52,73,94, .7);
+        transition: all 400ms ease-in-out;
+        background-color: rgba(52,73,94, .8);
         opacity: 0;
         padding-top: 75px;
     }
@@ -327,10 +330,14 @@ nav {
     background-color: $dark-grey;
     color: $main-color;
     text-align: center;
-    padding: 3em 0;
+    padding: 4em 0;
     h3 {
         padding-top: 0px;
+        padding-bottom: .5em;
         color: white;
+    }
+    .partner-up {
+        margin-bottom: 1.5em;
     }
 }
 
@@ -351,9 +358,6 @@ footer {
 #landing-changeseed {
     background-image: url("/images/changeseed-landing-image.png");
     background-size: cover;
-    h5 {
-        margin-top: 135px;
-    }
 }
 
 
@@ -363,38 +367,15 @@ footer {
     background-position: top center; 
     background-repeat:no-repeat;
     background-size: cover;
-//    position: relative;
-//    .case-specs {
-//        position: absolute;
-//        top: 0px;
-//        width: 100%;
-//    -webkit-box-sizing: border-box;
-//       -moz-box-sizing: border-box;
-//            box-sizing: border-box;
-//        color: white;
-//        text-align: center;
-//        height: 100%;
-//        z-index: 1;
-//        transition: all 300ms ease-in-out;
-//        background-color: rgba(111, 111, 111, 0.4);
-//        opacity: 0;
-//        padding-top: 75px;
-//    }
-//    &:hover {
-//        .case-specs{
-//            opacity: 1;
-//        }
-//    }
 }
 
 #landing-blocbox {
     background-image: url("/images/blocbox-landing-image.png");
     background-position: top center; 
     background-size: cover;
-    h5 {
-        margin-top: 135px;
+    .case-specs {
+        padding: 50px;
     }
-
 }
 
 .social-bar {
