@@ -120,7 +120,7 @@ background-image: linear-gradient(57deg, #22313F 0%, #385774 100%);
         background-position: center center;
     }
     .hero-overlay{
-        background-color: rgba(34,49,63,.4);
+        background-color: rgba(34,49,63,.6);
         height: 580px;
         margin-top: -50px;
         @media screen and (min-width: 480px){
@@ -168,7 +168,7 @@ background-image: linear-gradient(57deg, #22313F 0%, #385774 100%);
         @media screen and (min-width: 376px) {
             background-position: center right; 
             .about-block {
-                padding-top: 300px;
+                padding-top: 350px;
             }
             h2 {
             font-size: 1.25em;
