@@ -19,10 +19,8 @@ section{
     margin-bottom: 0px;
 }
 
-.conclusion {
-    padding: 3em 0;
-    background: $dark-grey;
-    color: white;
+figure {
+    margin: 1.25em 0;
 }
 
 .container {
@@ -62,7 +60,9 @@ nav {
             color: $main-color;
         }
         & .ux-design {
-            font-weight: 100;
+            font-weight: 200;
+            font-style: normal;
+            color: white;
         }
    }
     .menu-bar{
@@ -145,6 +145,29 @@ nav {
                 font-weight: 200;
                 font-size: 1.1em;
             }
+        }
+    }
+    &#about-page {
+        background-image:url("/images/me-bw.jpeg");
+        background-size: cover;
+        background-position: center right; 
+        background-repeat:no-repeat;
+        .about-block {
+            padding-top: 325px;
+        }
+        @media screen and (min-width: 376px) {
+            background-position: center right; 
+            .about-block {
+                padding-top: 300px;
+            }
+            h2 {
+            font-size: 1.25em;
+            line-height: 1.2;
+            }
+        }
+        h2 {
+            font-size: 1em;
+            line-height: 1.5;
         }
     }
     &#driftlist-hero{
@@ -269,6 +292,7 @@ nav {
         text-align: center;
         h5{
             padding-top: 1em;
+            font-size: 1.1em;
             margin: 0;
             color: white;
         }
@@ -330,14 +354,14 @@ nav {
     background-color: $dark-grey;
     color: $main-color;
     text-align: center;
-    padding: 4em 0;
+    padding: 4.5em 0;
     h3 {
         padding-top: 0px;
         padding-bottom: .5em;
         color: white;
     }
     .partner-up {
-        margin-bottom: 1.5em;
+        padding-bottom: 1em;
     }
 }
 
@@ -391,9 +415,6 @@ footer {
     }
     h5 {
         padding-bottom: 10px;
-    }
-    ul {
-        margin-top: 10px;
     }
     li {
         display: inline;
@@ -548,17 +569,14 @@ footer {
 }
 
 .the-problem {
-//    background-image: url("/images/sky-fog-rainy-mist.jpg");
-//    background-position: bottom left; 
-//    background-repeat:no-repeat;
-//    background-size: cover;
     background-color: $light-grey;
     padding: 2.75em 0px;
 }
 
-.the-solution {
-    background-color: lighten($main-color, 10%);
-    padding: 2.75em 0px;
+.conclusion, .the-solution {
+    padding: 3em 0;
+    background: $dark-grey;
+    color: white;
 }
 
 .the-process{
