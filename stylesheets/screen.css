@@ -1111,15 +1111,21 @@ footer {
 }
 
 /* line 618, ../sass/_overrides.scss */
+.code-life {
+  padding: 3.5em 0;
+  background-color: #ecf0f1;
+}
+
+/* line 623, ../sass/_overrides.scss */
 .the-process {
   padding: 2.75em 0px;
 }
-/* line 620, ../sass/_overrides.scss */
+/* line 625, ../sass/_overrides.scss */
 .the-process h2 {
   padding-bottom: 0;
 }
 
-/* line 625, ../sass/_overrides.scss */
+/* line 630, ../sass/_overrides.scss */
 .footer-content {
   width: 85%;
   margin: 0 auto;
