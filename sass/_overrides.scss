@@ -376,6 +376,9 @@ background-image: linear-gradient(57deg, #22313F 0%, #385774 100%);
         background-color: rgba(52,73,94, .8);
         opacity: 0;
         padding-top: 75px;
+        p {
+            font-size: .8em;
+        }
     }
     &:hover {
         .case-specs{
@@ -632,4 +635,8 @@ footer {
 .footer-content {
     width: 85%;
     margin: 0 auto;
+}
+
+#full-bio {
+    margin-bottom: 2em;
 }
