@@ -1,7 +1,6 @@
-//body {
-//    background-color: rgba(44,62,80,1);
-////    color: white;
-//}
+body {
+    background-color: $paper-white;
+}
 
 .mobile-hidden {
     @media screen and (max-width: 480px){
@@ -461,7 +460,7 @@ footer {
         display: inline;
         padding-right: 10px;
         i {
-             background-color: white;
+             background-color: $paper-white;
     //         border-radius: 50%;
              border: 1px solid $main-color;
              padding:10px;
