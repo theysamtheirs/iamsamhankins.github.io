@@ -14,20 +14,21 @@ visibility: visible;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "canada-type-gibson",sans-serif;
     font-size: 16px;
     @media screen and (min-width: 480){
         font-size: 18px;
     }
     @media screen and (min-width: 769px) {
         font-size: 20px;
-    }    
+    }
     @media screen and (max-width: 325px) {
         font-size: 14px;
     }
 }
+
 a {
-    text-decoration: none;  
+    text-decoration: none;
     color: $main-color;
 }
 h1 {
@@ -62,9 +63,8 @@ p{
 //    @media screen and (min-width: 480px) {
 //        width: 60%;
 //    }
-    font-family: "pragmatica-web",sans-serif;
-    font-style: normal;
-    font-weight: 300;
+
+    font-family: 'Work Sans', sans-serif;
     .contact &{
         text-align: center;
         width: 100%;
@@ -72,13 +72,18 @@ p{
 }
 
 li {
-    font-family: "pragmatica-web",sans-serif;
+
+
+      font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 200;
 }
 
 figcaption {
-    font-family: "pragmatica-web",sans-serif;
+
+
+      font-family: 'Work Sans', sans-serif;
+
     font-weight: 700;
 //    margin: 20px 0;
 }
@@ -203,7 +208,10 @@ figcaption {
 }
 
 .lead-text {
-    font-family: "pragmatica-web",sans-serif;
+
+
+      font-family: 'Work Sans', sans-serif;
+
     font-style: normal;
     font-weight: 700;
 }
@@ -277,4 +285,13 @@ figcaption {
     h2{
         line-height: 1.5;
     }
+}
+
+#currently {
+  display: inline-block;
+  width: 70%;
+  margin-top: 20px;
+  font-size: .9em;
+  line-height: 1.4;
+  font-weight: 400;
 }

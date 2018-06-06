@@ -22,7 +22,7 @@ figure {
     margin: 1.25em 0;
 }
 
-.container {    
+.container {
     width: 90%;
     margin: 0 auto;
 //    @media screen and (min-width: 480px) {
@@ -129,7 +129,7 @@ background-image: linear-gradient(57deg, #22313F 0%, #385774 100%);
     background-image:url("/images/bw-land.jpeg");
     background-size: cover;
     background-repeat:no-repeat;
-    background-position: top center; 
+    background-position: top center;
     @media screen and (min-width: 480px){
         height: 550px;
         background-position: center center;
@@ -148,10 +148,11 @@ background-image: linear-gradient(57deg, #22313F 0%, #385774 100%);
         margin-bottom: 10px;
         text-shadow: 0px 0px 4px rgba(0,0,0,0.2);
         @media screen and (min-width: 480px){
-            padding-top: 175px;
+            padding-top: 100px;
         }
     }
     & .hero-copy{
+        width: 80%;
         h1{
             text-shadow: 0px 1px 5px rgba(0,0,0,0.7);
         }
@@ -175,19 +176,19 @@ background-image: linear-gradient(57deg, #22313F 0%, #385774 100%);
     &#about-page {
         background-image:url("/images/me-bw.jpeg");
         background-size: cover;
-        background-position: -400px 0px; 
+        background-position: -400px 0px;
         background-repeat:no-repeat;
         .about-block {
             padding-top: 350px;
         }
         @media screen and (min-width: 480px){
-            background-position: -80px 30px; 
+            background-position: -80px 30px;
             .about-block {
                 padding-top: 425px;
             }
         }
         @media screen and (min-width: 769px) {
-            background-position: 0px -20px; 
+            background-position: 0px -20px;
             .about-block {
                 padding-top: 370px;
             }
@@ -205,16 +206,16 @@ background-image: linear-gradient(57deg, #22313F 0%, #385774 100%);
     &#driftlist-hero{
         background-image:url("/assets/driftlist/hero-background-mobile.jpg");
         background-size: cover;
-        background-position: center center; 
+        background-position: center center;
         background-repeat:no-repeat;
         @media screen and (min-width: 480px){
             background-image:url("/assets/driftlist/hero-background.jpg");
             background-size: cover;
-            background-position: center center; 
+            background-position: center center;
             background-repeat:no-repeat;
         }
         background-size: cover;
-        background-position: center center; 
+        background-position: center center;
         background-repeat:no-repeat;
         .hero-copy {
             margin-top: 250px;
@@ -241,7 +242,7 @@ background-image: linear-gradient(57deg, #22313F 0%, #385774 100%);
         background-image:url("/assets/changeseed/background-hero.jpg");
 //        height: 375px;
         background-size: cover;
-        background-position: top left; 
+        background-position: top left;
         background-repeat:no-repeat;
         .hero-copy {
             margin-top: 200px;
@@ -256,7 +257,7 @@ background-image: linear-gradient(57deg, #22313F 0%, #385774 100%);
             p   {
                 color: lighten($main-color, 30%);
                 text-shadow: 0px 1px 5px rgba(0,0,0,0.7);
-            }                
+            }
             }
         }
     }
@@ -276,7 +277,7 @@ background-image: linear-gradient(57deg, #22313F 0%, #385774 100%);
                 color: white;
             }
         }
-        }   
+        }
     }
     .down-arrow {
         margin-top: 30px;
@@ -391,7 +392,7 @@ background-image: linear-gradient(57deg, #22313F 0%, #385774 100%);
 
 .contact {
 /* Rectangle 1: */
-background-image: linear-gradient(57deg, #22313F 0%, #385774 100%);  
+background-image: linear-gradient(57deg, #22313F 0%, #385774 100%);
     color: $main-color;
     text-align: center;
     padding: 4.5em 0;
@@ -428,14 +429,14 @@ footer {
 
 #landing-driftlist {
     background-image:url("/images/drift-landing-bg.png");
-    background-position: top center; 
+    background-position: top center;
     background-repeat:no-repeat;
     background-size: cover;
 }
 
 #landing-blocbox {
     background-image: url("/images/blocbox-landing-image.png");
-    background-position: top center; 
+    background-position: top center;
     background-size: cover;
     .case-specs {
         padding: 50px;
