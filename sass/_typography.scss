@@ -34,8 +34,7 @@ a {
 h1 {
     font-size: 3.25em;
     color: $main-color;
-    font-weight: 700;
-//    letter-spacing: 5px;
+    font-weight: 800;
 }
 h2 {
     font-size: 2em;
@@ -205,6 +204,10 @@ figcaption {
         border-bottom: 1px solid black;
         padding: 10px;
     }
+}
+
+.name-block {
+  font-size: 1.5em;
 }
 
 .lead-text {
