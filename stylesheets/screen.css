@@ -1212,3 +1212,27 @@ footer {
 .form-container {
   margin: 50px 0px;
 }
+
+/* line 680, ../sass/_overrides.scss */
+.resource-intro {
+  margin: 50px 0px;
+}
+
+/* line 684, ../sass/_overrides.scss */
+.table-container {
+  margin-bottom: 50px;
+}
+
+/* line 688, ../sass/_overrides.scss */
+.sam-quote {
+  line-height: 1.5;
+}
+
+/* line 692, ../sass/_overrides.scss */
+.callout {
+  padding: 30px;
+  border: 1px solid #f9a825;
+  border-radius: 4px;
+  width: 75%;
+  margin: auto;
+}
