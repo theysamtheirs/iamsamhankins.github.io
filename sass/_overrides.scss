@@ -288,6 +288,36 @@ background-image: linear-gradient(57deg, #22313F 0%, #385774 100%);
             margin-bottom:0px;
         }
     }
+    &#resource-collect {
+        background-image:url("../images/arts-build-close-up-273230.jpg");
+        background-size: cover;
+        background-position: -400px 0px;
+        background-repeat:no-repeat;
+        .about-block {
+            padding-top: 350px;
+        }
+        @media screen and (min-width: 480px){
+            background-position: -80px 30px;
+            .about-block {
+                padding-top: 425px;
+            }
+        }
+        @media screen and (min-width: 769px) {
+            background-position: 0px -20px;
+            .about-block {
+                padding-top: 270px;
+            }
+            h2 {
+            width: 70%;
+            font-size: 1.25em;
+            line-height: 1.2;
+            }
+        }
+        h2 {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+    }
 }
 
 .first-figure {
@@ -641,4 +671,8 @@ footer {
 
 #full-bio {
     margin-bottom: 2em;
+}
+
+.form-container {
+  margin: 50px 0px;
 }
